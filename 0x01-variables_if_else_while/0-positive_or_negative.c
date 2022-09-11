@@ -2,8 +2,7 @@
 
 #include <time.h>
 
-/* more headers goes there */
-
+#include <stdio.h>
 
 
 /**
@@ -28,7 +27,7 @@ int main(void)
 	if (n > 0)
 	{
 	printf("is positive");
-	{
+	}
 	else if (n == 0)
 	{
 	printf("is zero");
@@ -41,3 +40,4 @@ int main(void)
 	return (0);
 
 }
+
