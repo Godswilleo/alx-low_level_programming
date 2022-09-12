@@ -31,7 +31,7 @@ int main(void)
 					if (!(a == 9 && b == 8 && c == 9 && d == 9))
 					{
 						putchar(',');
-						putchar(' ');		
+						putchar(' ');
 					}
 				}
 			}
@@ -40,6 +40,4 @@ int main(void)
 
 	putchar('\n');
 	return (0);
-
-
 }
