@@ -9,7 +9,7 @@ int _islower(char c);
 
 int _abs(int num);
 int print_last_digit(int num);
-
+int add(int num1, int num2);
 
 
 #endif
