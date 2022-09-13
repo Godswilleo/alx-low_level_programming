@@ -9,6 +9,6 @@
 int main(void)
 {
 
-	print_word("_purchar\n");
+	print_alphabet();
 	return (0);
 }

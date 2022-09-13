@@ -3,12 +3,11 @@
 /**
 * print_word - prints _putchar
 * Return: 0
+* @n: Character to be passed in
+*
 */
 
-
-int print_word(void)
+char print_word(char n)
 {
-	printf("_putchar\n");
-	return (0);
-
+	printf(n);
 }

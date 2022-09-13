@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
-* main - prints all the alphabets from a-z and repeats them on ten lines
+* print_alphabet - prints all the alphabets
 * Return: 0
 *
 */
 
-int main(void)
+int print_alphabet(void)
 {
 	int j = 'a';
 
