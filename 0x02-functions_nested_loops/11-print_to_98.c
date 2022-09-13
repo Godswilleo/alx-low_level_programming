@@ -16,22 +16,45 @@ int print_to_98(int num)
 	{
 		for (i = num; i <= 98; i++)
 		{
-			printf("%d, ", i);
 
+
+			if (i != 98)
+			{
+				printf("%d, ", i);
+			}
+
+			else
+			{
+				printf("%d", i);
+			}
 		}
 	}
+
 	if (num == 98)
 	{
 
 		printf("98");
 	}
+
+
+
 	if (num > 98)
 	{
 
 		for (i = num; i >= 98; i--)
 		{
 
-			printf("%d, ", i);
+
+			if (i != 98)
+			{
+				printf("%d, ", i);
+			}
+
+			else
+			{
+				printf("%d", i);
+			}
+
 		}
 	}
 	printf("\n");
