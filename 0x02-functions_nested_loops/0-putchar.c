@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 /**
-* print_word - prints _putchar
+* main - prints _putchar
 * Return: 0
-* @n: Character to be passed in
-*
 */
 
-char print_word(char n)
+int main(void)
 {
-	printf(n);
+	printf("_putchar");
+	return (0);
+
 }
+
