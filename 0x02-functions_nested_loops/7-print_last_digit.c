@@ -12,9 +12,9 @@ int print_last_digit(int num)
 
 	int r;
 
-	if (num < 10)
+	if(num < 10 && num > -9)
 	{
-	return (-1);
+	return (0);
 	}
 	else
 	{
