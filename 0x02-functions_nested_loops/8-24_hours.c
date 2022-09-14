@@ -17,27 +17,26 @@ void jack_bauer(void)
 		{
 			if (hrs > 9 && mins > 9)
 			{
-				_putchar(hrs);
-				_putchar(':');
-				_putchar(mins);
-				_putchar(',');
-				_putchar(' ');
+				printf("%d:%d\n", hrs, mins);
+
 			}
+
 			if (hrs < 9 && mins > 9)
 			{
-				_putchar('0');
-				_putchar(hrs);
-				_putchar(':');
-				_putchar(mins);
-				_putchar(',');
-				_putchar(' ');
+				printf("0%d:%d\n", hrs, mins);
+
 			}
-			if (hrs == 23 && mins == 59)
+
+			if (hrs > 9 && mins < 9)
 			{
-				_putchar(hrs);
-				_putchar(':');
-				_putchar(mins);
-				_putchar('\n');
+				printf("%d:0%d\n", hrs, mins);
+
+			}
+
+			if (hrs < 9 && mins < 9)
+			{
+				printf("0%d:0%d\n", hrs, mins);
+
 			}
 
 		}
