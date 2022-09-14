@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
 * jack_bauer - prints every minute of the day from 00:00 to 23:59
@@ -7,41 +7,40 @@
 *
 */
 
-int jack_bauer(void)
+void jack_bauer(void)
 {
+	int hrs, mins;
 
-	int a, b, x, y;
-
-	for (a = 0; a <= 23; a++)
+	for (hrs = 0; hrs <= 23; hrs++)
 	{
-		for (b = 0; b <= 59; b++)
+		for (mins = 0; mins <= 59; mins++)
 		{
-			if (a > 9)
+			if (hrs > 9 && mins > 9)
 			{
-				x = "%d", a;
+				_putchar(hrs);
+				_putchar(':');
+				_putchar(mins);
+				_putchar(',');
+				_putchar(' ');
 			}
-			else
+			if (hrs < 9 && mins > 9)
 			{
-				x = "0%d", a;
+				_putchar('0');
+				_putchar(hrs);
+				_putchar(':');
+				_putchar(mins);
+				_putchar(',');
+				_putchar(' ');
 			}
-			if (b > 9)
+			if (hrs == 23 && mins == 59)
 			{
-				y = "%d", b;
+				_putchar(hrs);
+				_putchar(':');
+				_putchar(mins);
+				_putchar('\n');
 			}
-			else
-			{
-				y = "0%d", b;
-			}
-
-			putchar(x);
-			putchar(":");
-			putchar(y);
 
 		}
-
-
-
 	}
-
-	return (0);
 }
+
