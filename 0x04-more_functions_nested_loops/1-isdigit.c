@@ -7,9 +7,9 @@
 *
 */
 
-int _isupper(char character)
+int _isdigit(char character)
 {
-	if(isupper(character))
+	if(isdigit(character))
 		return (1);
 	else
 		return(0);
