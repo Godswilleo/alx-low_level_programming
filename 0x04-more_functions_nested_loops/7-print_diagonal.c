@@ -5,14 +5,14 @@
 /**
 * print_diagonal - prints a diagonal line
 * Return: 0
-*@size: variable to determine the length of the line
+*@n: variable to determine the length of the line
 *
 */
 
-void print_diagonal(int size)
+void print_diagonal(int n)
 {
 
-	if (size <= 0)
+	if (n <= 0)
 	{
 		putchar('\n');
 	}
@@ -20,14 +20,21 @@ void print_diagonal(int size)
 	{
 		int j = 1;
 
-		while (j <= size)
+		while (j <= n)
 		{
 
 			int i = 0;
 
-			while (i <= j)
+			while (i < j)
 			{
-				putchar(' ');
+				if (i == 0)
+				{
+
+				}
+				else
+				{
+					putchar(' ');
+				}
 				i++;
 			}
 			putchar('\\');
