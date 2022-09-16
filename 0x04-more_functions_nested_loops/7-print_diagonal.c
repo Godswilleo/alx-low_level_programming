@@ -9,11 +9,8 @@
 *
 */
 
-int print_diagonal(int size)
+void print_diagonal(int size)
 {
-	int i;
-
-	size = 0;
 
 	if (size <= 0)
 	{
@@ -21,15 +18,23 @@ int print_diagonal(int size)
 	}
 	else
 	{
+		int j = 1;
 
-		for (i = 0; i < size; i++)
+		while (j <= size)
 		{
-			putchar(' ');
-		}
-		putchar('\\');
-		puutchar('\n');
-	}
 
-	return (0);
+			int i = 0;
+
+			while (i <= j)
+			{
+				putchar(' ');
+				i++;
+			}
+			putchar('\\');
+			putchar('\n');
+		j++;
+
+		}
+	}
 }
 
