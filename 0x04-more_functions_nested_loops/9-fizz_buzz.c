@@ -2,7 +2,7 @@
 
 /**
 * main - prints the fizzbuzz test
-*
+* Return: 0
 */
 
 int main(void)
@@ -35,3 +35,4 @@ int main(void)
 	return (0);
 
 }
+
