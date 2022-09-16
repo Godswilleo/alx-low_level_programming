@@ -1,6 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+int print_diagonal(in size);
 void print_number(int number);
 void print_square(int size);
 void print_line(int n);
