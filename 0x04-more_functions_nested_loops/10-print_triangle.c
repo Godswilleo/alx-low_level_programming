@@ -12,7 +12,7 @@
 void print_triangle(int size)
 {
 
-	int i,k;
+	int i, j, k;
 
 	if (size <= 0)
 	{
@@ -20,17 +20,17 @@ void print_triangle(int size)
 	}
 	else
 	{
-		int j = 1;
+		j = 1;
 
 		while (j <= size)
 		{
 			i = 0;
 
 			while (i < (size - j))
-			
+
 			{
 				putchar(' ');
-				i++;	
+				i++;
 			}
 			k = 0;
 
