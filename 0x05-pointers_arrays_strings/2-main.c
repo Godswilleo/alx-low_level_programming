@@ -12,11 +12,8 @@ int main(void)
 	char *str;
 	int len;
 
-	a = 50;
-	b = 80;
-
-	str = "My first strlen";
-	len = _stren(str)
+	str = "My first strlen!";
+	len = _strlen(str);
 
 	printf("%d\n", len);
 	return (0);
