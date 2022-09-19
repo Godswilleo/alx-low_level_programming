@@ -6,7 +6,7 @@
 /**
  * _puts - prints a string
  * Return: returns to string length
- * @s: string varaible to be checked
+ * @str: string varaible to be checked
  *
  */
 
