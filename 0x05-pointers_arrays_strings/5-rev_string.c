@@ -15,10 +15,10 @@ void rev_string(char *s)
 	for (a = (strlen(s)-1); a >= 0; --a)
 	{
 
-	putchar(s[a]);
+		printf("%c", s[a]);
 
 	}
 
-	putchar('\n');
+	printf("\n");
 
 }
