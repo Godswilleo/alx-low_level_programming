@@ -10,15 +10,21 @@
 
 void rev_string(char *s)
 {
+	
 	int a;
-
-	for (a = (strlen(s)-1); a >= 0; --a)
+	a = 0;
+	
+	while(s[a])
 	{
-
-		printf("%c", s[a]);
+		a++;
 
 	}
+	while (a--)
+	{
+		
+		putchar(s[a]);
+	}
 
-	printf("\n");
+	putchar('\n');
 
 }
