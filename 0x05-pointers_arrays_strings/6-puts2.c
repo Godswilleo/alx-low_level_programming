@@ -18,10 +18,10 @@ void puts2(char *str)
 
 	while (str[a] != '\0')
 	{
+		if ((a % 2) == 0)
+			putchar(str[a]);
 
-	putchar(str[a]);
-
-	a = a + 2;
+		a = a + 2;
 
 	}
 	putchar('\n');
