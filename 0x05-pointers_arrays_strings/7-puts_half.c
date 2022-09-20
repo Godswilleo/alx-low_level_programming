@@ -18,23 +18,24 @@ void puts_half(char *str)
 
 	a = 0;
 
-
-	if ((strlen(str[a]) % 2 == 0))
+	while (src[i] != '\0')
 	{
-		length = (strlen(str[a]))/2;
-	}
-	else
-	{
-		length = (strlen(str[a])-1)/2;
-	}
+		if ((strlen(str[a]) % 2 == 0))
+		{
+			length = (strlen(str[a]))/2;
+		}
+		else
+		{
+			length = (strlen(str[a])-1)/2;
+		}
 
-	for (b = length; b >= strlen(str[a]); b++)
-	{
-		putchar(str[a]);
-		a++;
+		for (b = length; b >= strlen(str[a]); b++)
+		{
+			putchar(str[a]);
+			a++;
+		}
+		putchar('\n');
 	}
-	putchar('\n');
-
 
 
 }
