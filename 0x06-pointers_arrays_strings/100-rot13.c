@@ -18,10 +18,9 @@ char *rot13(char *s)
 	{
 		if (s[i] <= 122 && s[i] >= 65)
 		{
-	     	     	rot13x[i] = alphabets[i];
+			rot13x[i] = alphabets[i];
 			s[i] = rot13x[i];
 		}
-			
 		printf("%c", s[i] + '\0');
 	}
 	return (s);
