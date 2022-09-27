@@ -10,10 +10,10 @@
 int main(void)
 {
 
-	char buffer[98] = {0};
-	char buffer2[98] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14};
+	char buffer[98] = "This is the way";
+	char buffer2[98] = "To the gate";
 
-	_memcpy(buffer + 50, buffer2, 98);
+	_memcpy(buffer + 13, buffer2, 10);
 
 	printf("%s", buffer);
 	printf("\n");

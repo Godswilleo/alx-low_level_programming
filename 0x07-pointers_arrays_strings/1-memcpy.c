@@ -2,22 +2,15 @@
 #include <stdio.h>
 /**
  * _memcpy - fills memory with a constant byte
- * Return: destination
- * @dest: destination
+ * Return: dest
+ * @dest: destination variable
  * @n: number of bytes to copy
- * @src: source
+ * @src: source variable
  */
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int a;
-
-	for (a = 0; a < n; a++)
-	{
-
-		dest[a] = src[a];
-
-	{
+	memcpy(dest, src, n);
 
 	return (dest);
 
