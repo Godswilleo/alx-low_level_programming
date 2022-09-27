@@ -11,6 +11,20 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	memset(s, b, sizeof(char) * n);
+	unsigned int i;
+
+	for (i = 0; i < n; i++)
+	{
+
+		s[i] = b;
+	}
+
+	for (i = 0; i < n; i++)
+	{
+
+		printf("%c", s[i]);
+
+	}
+	printf(" ");
 	return (s);
 }
