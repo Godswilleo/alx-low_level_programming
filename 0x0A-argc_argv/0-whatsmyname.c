@@ -8,7 +8,7 @@
 * @argv: pointer to characters of terminal arguments
 */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 	printf("%s\n", argv[0]);
 
