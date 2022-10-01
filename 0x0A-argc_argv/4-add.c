@@ -18,6 +18,8 @@ int main(int argc, char *argv[])
 	int sum;
 	char *p;
 
+
+
 	if (argc < 2)
 	{
 		printf("0\n");
@@ -27,9 +29,9 @@ int main(int argc, char *argv[])
 	{
 		sum = 0;
 
-		i = 1;
 
-		while (i < argc)
+
+		for (i = 1; i < argc; i++)
 		{
 			p = argv[i];
 
@@ -44,7 +46,6 @@ int main(int argc, char *argv[])
 			}
 
 			sum = sum + atoi(argv[i]);
-			i++;
 		}
 
 	}
