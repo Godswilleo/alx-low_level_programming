@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
 	int i, j;
 	int sum;
-	int ret;
+
 
 	if (argc < 3)
 	{
