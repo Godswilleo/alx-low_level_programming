@@ -16,39 +16,38 @@ int main(int argc, char *argv[])
 
 	int i, j;
 	int sum;
-	char *p;
+	int check;
 
-
-
-	if (argc < 2)
+	if (argc < 3)
 	{
-		printf("0\n");
-		return (1);
+		printf("%d", 0);
 	}
-	else
+	else 
 	{
+
 		sum = 0;
-
-
 
 		for (i = 1; i < argc; i++)
 		{
-			p = argv[i];
-
-			for (j = 0; j < strlen(p); j++)
+			
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				if (isdigit(*(p + j)) == 0)
+
+				if (argv[i][j] < '0' || argv[i][j] > '9')
 				{
 					printf("Error\n");
 					return (1);
+				
 				}
 
 			}
 
 			sum = sum + atoi(argv[i]);
-		}
 
+		}
+		printf("%d\n", sum);
+		return (0);		
 	}
-	printf("%d\n", sum);
-	return (0);
+
+	
 }
