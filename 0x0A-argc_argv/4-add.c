@@ -16,12 +16,11 @@ int main(int argc, char *argv[])
 
 	int i, j;
 	int sum;
-
+	int ret;
 
 	if (argc < 3)
 	{
 		printf("%d", 0);
-		return(1);
 	}
 	else
 	{
@@ -37,7 +36,7 @@ int main(int argc, char *argv[])
 				if (argv[i][j] < '0' || argv[i][j] > '9')
 				{
 					printf("Error\n");
-					return (1);
+					ret = 1;
 
 				}
 
@@ -47,7 +46,8 @@ int main(int argc, char *argv[])
 
 		}
 		printf("%d\n", sum);
+		ret = 0;
 	}
 
-	return (0);
+	return (ret);
 }
