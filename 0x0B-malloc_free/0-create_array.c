@@ -1,4 +1,4 @@
-#include <stdio.h>
+:#include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 
@@ -22,12 +22,13 @@ char *create_array(unsigned int size, char c)
 	if (a == NULL)
 		return (NULL);
 
-	b = 0;
-	while (b < size)
+
+	for (b = 0; b < size; b++)
 	{
-		a[i] = c;
-		b++
+		a[b] = c;
+
 	}
 
 	return (a);
+
 }
