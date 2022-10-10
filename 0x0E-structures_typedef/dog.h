@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
-* struct dog - defines a dog
+* struct dog - defines a struct dog
 * @name: member
 * @age: member
 * @owner: member
@@ -10,12 +10,13 @@
 * Description: This is a struct that defines tha characteristic of a dog
 */
 
-typedef struct
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-}dog_t;
+};
+typedef struct dog dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
