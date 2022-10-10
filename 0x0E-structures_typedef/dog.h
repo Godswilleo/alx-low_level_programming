@@ -10,12 +10,12 @@
 * Description: This is a struct that defines tha characteristic of a dog
 */
 
-struct dog dog_t
+typedef struct
 {
 	char *name;
 	float age;
 	char *owner;
-};
+}dog_t;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
