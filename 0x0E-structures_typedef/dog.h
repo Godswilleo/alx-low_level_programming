@@ -10,7 +10,7 @@
 * Description: This is a struct that defines tha characteristic of a dog
 */
 
-struct dog
+struct dog dog_t
 {
 	char *name;
 	float age;
@@ -18,5 +18,6 @@ struct dog
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 #endif /* DOG_H */
