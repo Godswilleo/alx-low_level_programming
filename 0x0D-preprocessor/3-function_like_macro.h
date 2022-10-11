@@ -4,7 +4,7 @@
 /**
 * File: 3-function_like_macro.h
 * Description: creates a macro for the absolute value of x
-* @X: value whose absolute value is the be evalutated
+* @x: value whose absolute value is the be evalutated
 */
 
 
