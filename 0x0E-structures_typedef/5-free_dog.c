@@ -9,8 +9,8 @@
 	if (d == NULL)
 		return;
 
-	free(->owner);
-	free(d->age);
+	free(d->name);
+	free(d->owner);
 	free(d);
 
 }
