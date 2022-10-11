@@ -5,7 +5,7 @@
 * Description: This file defines a macro SIZE
 */
 
-#define SIZE 1024;
+#define SIZE 1024
 
 
-#endif /* 0_OBJECT_LIKE_MACRO_H */
+#endif /* OBJECT_LIKE_MACRO_H */
