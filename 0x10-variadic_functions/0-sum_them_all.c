@@ -22,11 +22,12 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		int x = va_arg(args, int);
 
-		sum = sum + x;
+		sum += x;
 
 	}
 
 	va_end(args);
+
 	return (sum);
 
 	
