@@ -2,8 +2,9 @@
 #include <stdarg.h>
 
 /**
-* sum_them_all -  sums up all int argument entered
+* print_numbers -  print the numbers passed
 * @n: number of arguments
+* @seperator: character separating the printed numbers
 * Return: 0 if n is zero and returns sum if it is not
 */
 
@@ -18,8 +19,9 @@ int print_numbers(const char *seperator, const unsigned int n, ...)
 	for (i = 1; i <= n; i++)
 	{
 		int x = va_arg(args, int);
+
 		printf("%d", x);
-		
+
 		if (i == n)
 			printf("\n");
 		else
