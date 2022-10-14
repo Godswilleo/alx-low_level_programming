@@ -1,4 +1,4 @@
-:#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
 
@@ -17,17 +17,17 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	a = malloc(sizeof(c) * size);
+	a = (char *) malloc(sizeof(c) * size);
 
-	if (a == NULL)
+	if (a == 0)
 		return (NULL);
 
+	b = 0;
+		for (b = 0; b < size; b++)
+		{
+			*(a + b) = c;
 
-	for (b = 0; b < size; b++)
-	{
-		a[b] = c;
-
-	}
+		}
 
 	return (a);
 
