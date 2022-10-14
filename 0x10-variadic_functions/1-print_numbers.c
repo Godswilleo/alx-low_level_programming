@@ -8,7 +8,7 @@
 * Return: 0 if n is zero and returns sum if it is not
 */
 
-int print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *seperator, const unsigned int n, ...)
 {
 	unsigned int i;
 
@@ -32,7 +32,5 @@ int print_numbers(const char *seperator, const unsigned int n, ...)
 	}
 
 	va_end(args);
-	return (0);
-
 
 }
