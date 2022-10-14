@@ -8,7 +8,7 @@
 * Return: 0 if n is zero and returns sum if it is not
 */
 
-int print_strings(const char *seperator, const unsigned int n, ...)
+void print_strings(const char *seperator, const unsigned int n, ...)
 {
 	unsigned int i;
 	va_list args;
