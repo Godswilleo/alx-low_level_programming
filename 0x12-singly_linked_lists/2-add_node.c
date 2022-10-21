@@ -8,27 +8,25 @@
  * @head: head of the linked list.
  * @str: string to store in the list.
  * Return: address of the head.
- */
+**/
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new;
+	list_t *new_node;
 
-	unsigned int n;
+	int length = strlen(str);
 
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
 		return (NULL);
 
-	new->str = strdup(str);
+	new_node->str = strdup(str);
 
-	for (n = 0; str[n]; n++)
-		len++;
+	new_node->len = length;
 
-	new->len = n;
-	new->next = *head;
-	*head = new;
+	new_node->next = *head;
 
-	return (*head);
+	*head = new_node;
+
+	return (new_node);
 }
-
