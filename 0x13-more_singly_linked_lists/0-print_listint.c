@@ -5,26 +5,25 @@
  * @h: list to print
  * Return: the number of nodes
  */
-size_t print_list(const list_t *h)
+size_t print_listint(const listint_t *h)
 {
 	size_t number_of_nodes = 0;
 
 	while (h)
 	{
-		if (h->str == NULL)
+		if (h->n == 0)
 		{
 			printf("[0] (nil)\n");
 		}
 
 		else
 		{
-			printf("[%d] %s\n", h->len, h->str);
+			printf("%d\n", h->n);
 		}
 
 		number_of_nodes++;
-		
-		h = h->next;
 
+		h = h->next;
 	}
 	return (number_of_nodes);
 }
