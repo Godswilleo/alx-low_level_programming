@@ -18,6 +18,8 @@ typedef struct listint_s
 } listint_t;
 
 
+
+int delete_nodeint_at_index(listint_t **head, unsigned int index);
 listint_t *find_listint_loop(listint_t *head);
 int pop_listint(listint_t **head);
 void free_listint2(listint_t **head);
