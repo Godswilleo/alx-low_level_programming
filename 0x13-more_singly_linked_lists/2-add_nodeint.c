@@ -10,23 +10,23 @@
  * Return: address of the head.
 **/
 
-listint_t *add_nodeint(listint_t **head, const char *str)
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	listint_t *new_node;
+	listint_t *new;
 
-	int length = strlen(str);
+	new = malloc(sizeof(listint_t));
 
-	new_node = malloc(sizeof(listnt_t));
-	if (new_node == NULL)
+	if (new == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str);
+	new->n = n;
 
-	new_node->len = length;
+	new->next = *head;
 
-	new_node->next = *head;
+	*head = new;
 
-	*head = new_node;
 
-	return (new_node);
+	return (*head);
+
+
 }
