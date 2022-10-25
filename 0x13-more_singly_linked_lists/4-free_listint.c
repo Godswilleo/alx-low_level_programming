@@ -3,21 +3,24 @@
 
 
 /**
- * free_list - frees memory
+ * free_listint - frees memory
  * @head: head of the list
  * Return: nothing
  */
 
-void free_list(list_t *head)
+void free_listint(listint_t **head)
 {
-	list_t *i;
+	listint_t *i;
+	listint_t *j;
 
-	while (head)
+	j = *head;
+
+	while ((i = j) != NULL)
 	{
-		head = head->next;
-
-		free(i->n);
+		j = j->next;
 
 		free(i);
+
 	}
+	*head = NULL
 }
