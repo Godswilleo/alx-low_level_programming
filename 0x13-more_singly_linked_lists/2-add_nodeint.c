@@ -6,7 +6,7 @@
  * add_nodeint - adds a new node at the beginning
  * of a list_t list.
  * @head: head of the linked list.
- * @str: string to store in the list.
+ * @n: parameter
  * Return: address of the head.
 **/
 
