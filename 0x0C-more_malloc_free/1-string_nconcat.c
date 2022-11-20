@@ -1,38 +1,51 @@
-#include <stdlib.h>
-#include <limits.h>
-#include <string.h>
+#include "main.h"
 
 /**
-* string_nconcat - concatenates two strings
-* @s1: string variable
-* @s2: string variable to concantenate to s1
-* @n: determine the amount of bytes to add to s1 from s2
-* Return: the pointer
-*/
+ * string_nconcat - concatenates two strings.
+ * @s1: first string
+ * @s2: second string
+ * @n: index
+ * Return: char pointer
+ */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	char *p;
+	unsigned int size1 = 0, size2 = 0, i;
 
-	void *p;
+	if (s1 == NULL)
+		s1 = "";
 
+	if (s2 == NULL)
+		s2 = "";
 
-	if (n >= sizeof(s2))
+	while (s1[size1] != '\0')
 	{
-		p = malloc(sizeof(s1) + sizeof(s2));
-		p[] = strcat(s1, s2);
+		size1++;
+	}
 
-	}
-	else
+	while (s2[size2] != '\0')
 	{
-		p = malloc(sizeof(s1) + n + 1);
-		p[] = strncat(s1, s2, n);
+		size2++;
 	}
+
+	if (n > size2)
+	n = size2;
+	p = malloc((size1 + n + 1) * sizeof(char));
 
 	if (p == NULL)
+		return (0);
+
+	for (i = 0; i < size1; i++)
 	{
-		return (NULL);
+		p[i] = s1[i];
 	}
 
-	return (p);
+	for (; i < (size1 + n); i++)
+	{
+		p[i] = s2[i - size1];
+	}
+	p[i] = '\0';
 
+	return (p);
 }
